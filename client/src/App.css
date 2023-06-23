@@ -1,0 +1,126 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Bookshelf Styles */
+.bookshelf {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.book h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.book p {
+  margin: 0;
+}
+
+.book .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.book .buttons button {
+  padding: 8px 16px;
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book .buttons button:hover {
+  background-color: #0056b3;
+}
+
+.book .buttons a {
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #007aff;
+  border-radius: 5px;
+}
+
+.book .buttons a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Home Page Styles */
+.home h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Book Details Page Styles */
+.book-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.book-details .content {
+  max-width: 400px;
+  text-align: center;
+}
+
+.book-details img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.book-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.book-details p {
+  margin: 0;
+}
+
+/* Error Page Styles */
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.error h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
